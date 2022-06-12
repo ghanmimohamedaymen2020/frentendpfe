@@ -1,0 +1,59 @@
+<mat-card class="card">
+    <mat-card-header>
+        <h1>Add New Fiche Intervention</h1>
+    </mat-card-header>
+    <div class="container">
+
+        <form (ngSubmit)="OnSubmit()">
+
+            <!-- 
+            <div class="form-group">
+                <label>Id </label>
+                <input type="number" class="form-control" id="Id" [(ngModel)]="ficheIntervention.id" name="id">
+            </div> -->
+
+            <div class="form-group">
+                <label>prog </label>
+                <input type="text" class="form-control" id="prog" [(ngModel)]="ficheIntervention.prog" name="prog">
+            </div>
+
+            <div class="form-group">
+                <label>actionsRealisees </label>
+                <input type="text" class="form-control" id="actionsRealisees" [(ngModel)]="ficheIntervention.actionsRealisees" name="actionsRealisees">
+            </div>
+
+            <div class="form-group">
+                <label>detailInvestigations </label>
+                <input type="text" class="form-control" id="detailInvestigations" [(ngModel)]="ficheIntervention.detailInvestigations" name="idetailInvestigationsd">
+            </div>
+
+            <div class="form-group">
+                <label>statutResolution </label>
+                <input type="text" class="form-control" id="statutResolution" [(ngModel)]="ficheIntervention.statutResolution" name="statutResolution">
+            </div>
+
+            <div class="form-group">
+                <label>consequencesIncident </label>
+                <input type="text" class="form-control" id="consequencesIncident" [(ngModel)]="ficheIntervention.consequencesIncident" name="consequencesIncident">
+            </div>
+
+            <div class="form-group">
+                <label>causeIncident </label>
+                <input type="text" class="form-control" id="causeIncident" [(ngModel)]="ficheIntervention.causeIncident" name="causeIncident">
+            </div>
+
+            <div class="form-group">
+                <label>constats </label>
+                <input type="text" class="form-control" id="constats" [(ngModel)]="ficheIntervention.constats" name="constats">
+            </div>
+
+            <div class="form-group">
+                <label>dureeIncident </label>
+                <input type="text" class="form-control" id="dureeIncident" [(ngModel)]="ficheIntervention.dureeIncident" name="dureeIncident">
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-primary">Save User</button>
+        </form>
+    </div>
+</mat-card>
