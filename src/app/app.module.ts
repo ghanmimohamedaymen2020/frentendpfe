@@ -29,7 +29,6 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { SaveFichInterventionToPDFComponent } from './save-fich-intervention-to-pdf/save-fich-intervention-to-pdf.component';
 import { AddFicheInterventionComponent } from './add-fiche-intervention/add-fiche-intervention.component';
 
-import { AddFicheInventaireComponent } from './add-fiche-inventaire/add-fiche-inventaire.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -48,7 +47,6 @@ import { CreateUserComponent } from './create-user/create-user.component';
     ListOfFicheInterventionComponent,
     SaveFichInterventionToPDFComponent,
     AddFicheInterventionComponent,
-    AddFicheInventaireComponent,
     NavbarComponent,
     LoginComponent,
     UpdateUserComponent,

@@ -16,11 +16,18 @@ export class AddFicheInterventionComponent implements OnInit {
   ngOnInit(): void {
   }
 saveFicheIntervention (){
-  return this.FicheInterventionService.createFicheIntervention(this.ficheIntervention).subscribe(data =>{
+  return this.FicheInterventionService.createFicheIntervention(this.ficheIntervention).
+  subscribe({
+    complete : ()=> {this.gotoFicheInternetionList();},
+    error : ()=> {console.log(console.error()
+    )}
+  })
+  
+  /*(data =>{
     console.log(data);
     this.gotoFicheInternetionList();
   }, error => console.log(error)
-  )
+  )*/
 }
 gotoFicheInternetionList(){
 this.router.navigate(['/ficheInventaire'])

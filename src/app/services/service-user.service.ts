@@ -10,7 +10,7 @@ import { User } from '../Models/user';
 export class ServiceUserService {
 
 
-  private baseUrl :"http://localhost:8080/api/V1/users";
+  private baseUrl :"http://localhost:9090/users";
                    
  
 
@@ -26,18 +26,19 @@ export class ServiceUserService {
 
     }
 
+  
     getUserById(id:string): Observable<User>{
       console.log(id)
       return this.httpClient.get<User>(`http://localhost:9090/users/${id}`)
     }
 
     updateUser(id : string , user :User):Observable<object>{
-      return this.httpClient.put(`http://localhost:9090/user/${id}`,user);
+      return this.httpClient.put(`http://localhost:9090/users/${id}`,user);
     }
 
     deletUser(id : string): Observable<Object>{
  
-      return this.httpClient.delete(`http://localhost:9090/delateusers/${id}`)
+      return this.httpClient.delete(`http://localhost:9090/users/${id}`)
     }
   }
 

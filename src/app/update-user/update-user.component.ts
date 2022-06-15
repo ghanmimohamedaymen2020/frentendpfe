@@ -20,30 +20,21 @@ export class UpdateUserComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
     console.log(this.id)
-    this.userServices.getUserById(this.id).subscribe({
+    this.userServices.getUserById(this.id).subscribe(
+      data=>{
 
-      complete : () => {this.user  },
-    // rror=>console.log(error));}
-    error :() => {console.log(console.error())}
+        this.user =data 
+      },error=>console.log(error));
       
-    })}
+    }
+      
+        OnSubmit(){
+          this.userServices.updateUser(this.id,this.user).subscribe(data=>{
+            this.goToUserList(); 
+          
+         }, error=> console.log(error()))}
 
-    //   .subscribe({
-    //     complet&e: () => { ... }, // completeHandler
-    //     error: () => { ... },    // errorHandler 
-    //     next: () => { ... },     // nextHandler
-    //     someOtherProperty: 42
-    // });
-
-
-
-      OnSubmit(){
-        this.userServices.updateUser(this.id,this.user).subscribe(data=>{
-           this.goToUserList(); 
          
-        }, error=> console.log(error()))}
-      
-        
        goToUserList(){
          this.router.navigate(['/users']);
      

@@ -33,13 +33,13 @@
                     <a *ngIf="isloggedIn() && getRoleAdmin()" routerLink="users" routerLinkActive="active" class="nav-link"> Users List </a>
                 </li>
                 <li class="nav-item">
-                    <a *ngIf="isloggedIn() && getRoleAdmin()" routerLink="create-user" routerLinkActive="active" class="nav-link"> New User </a>
+                    <a *ngIf="isloggedIn() && getRoleAdmin()" routerLink="createNewUser" routerLinkActive="active" class="nav-link"> New User </a>
                 </li>
                 <li class="nav-item">
-                    <a *ngIf="isloggedIn() && ! getRoleAdmin()" routerLink="ticket-List" routerLinkActive="active" class="nav-link"> List réclamations  </a>
+                    <a *ngIf="isloggedIn() && ! getRoleAdmin()" routerLink="ListOfFichesInterventions" routerLinkActive="active" class="nav-link"> List réclamations  </a>
                 </li>
                 <li class="nav-item">
-                    <a *ngIf="isloggedIn() && ! getRoleAdmin() " routerLink="create-ticket" routerLinkActive="active" class="nav-link"> créer réclamation</a>
+                    <a *ngIf="isloggedIn() && ! getRoleAdmin() " routerLink="createNewUser" routerLinkActive="active" class="nav-link"> créer réclamation</a>
                 </li>
 
             </ul>

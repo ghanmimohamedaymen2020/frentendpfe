@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
         if( role === 'Admin'){
           this.router.navigate(['/users'])
         }else {
-          this.router.navigate(['/create-ticket'])
+          this.router.navigate(['/ListOfFichesInterventions'])
 
         }
       },
