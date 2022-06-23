@@ -25,17 +25,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
-
 import { SaveFichInterventionToPDFComponent } from './save-fich-intervention-to-pdf/save-fich-intervention-to-pdf.component';
 import { AddFicheInterventionComponent } from './add-fiche-intervention/add-fiche-intervention.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ListeDetailleeTravailFinJourneeComponent } from './liste-detaillee-travail-fin-journee/liste-detaillee-travail-fin-journee.component';
 
 
 
@@ -52,6 +51,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
     UpdateUserComponent,
     UserListComponent,
     CreateUserComponent,
+    ListeDetailleeTravailFinJourneeComponent,
     
     
   ],

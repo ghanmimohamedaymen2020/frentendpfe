@@ -1,0 +1,65 @@
+<!-- <div class="card">
+    <mat-card-content>
+        <cdk-accordion class="example-accordion">
+            <cdk-accordion-item *ngFor="let ldtfj of LdtfjList; let index = index;" #accordionItem="cdkAccordionItem" class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    <h4> {{ldtfj.PROG}} </h4>{{ ldtfj.PROG }}
+                    <span class="example-accordion-item-description">
+         {{ accordionItem.expanded ? 'close' : 'mor' }}
+      </span>
+                </div>
+                <div class="example-accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+                    <span><h3>PROG</h3></span>
+                    <p>{{ldtfj.PROG}}</p>
+                    <span><h4>DCO</h4></span>
+                    <p>{{ldtfj.DCO}}</p>
+                    <span><h4>DATD</h4></span>
+                    <p>{{ldtfj.DATD }}</p>
+                    <span><h4>HEURD</h4></span>
+                    <p>{{ldtfj.HEURD}}</p>
+                    <span> <h4>DATEF</h4></span>
+                    <p>{{ldtfj.DATF}}</p>
+                    <span> <h4> DUREE</h4></span>
+                    <p>{{ldtfj.DUREE}}</p>
+                    <span> <h4>dureeIncident</h4></span>
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
+    </mat-card-content>
+
+</div> -->
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title> List Of Details TFJ </mat-card-title>
+    </mat-card-header>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">PROG</th>
+                <th scope="col">DCO</th>
+                <th scope="col">DATD</th>
+                <th scope="col">HEURD</th>
+                <th scope="col">DATF</th>
+                <th scope="col">HEURF</th>
+                <th scope="col">DUREE</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let ldtfj of LdtfjList ">
+            <td>{{ldtfj.prog}}</td>
+            <td>{{ldtfj.DCO}}</td>
+            <td>{{ldtfj.DATD}}</td>
+            <td>{{ldtfj.heurd}}</td>
+            <td>{{ldtfj.datf}}</td>
+            <td>{{ldtfj.heurf}}</td>
+            <td>{{ldtfj.duree}}</td>
+            <td></td>
+
+        </tbody>
+    </table>
+
+
+    <!-- 
+<ng-container>
+    <li *ngFor="let item of LdtfjList | slice:0:10; let i=index" class="dropdown-item">qsdqhjkbsdjkqs</li>
+
+</ng-container> -->
