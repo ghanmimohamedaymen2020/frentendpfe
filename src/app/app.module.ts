@@ -27,7 +27,6 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { SaveFichInterventionToPDFComponent } from './save-fich-intervention-to-pdf/save-fich-intervention-to-pdf.component';
 import { AddFicheInterventionComponent } from './add-fiche-intervention/add-fiche-intervention.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { MatCardModule } from '@angular/material/card';
@@ -35,7 +34,9 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ListeDetailleeTravailFinJourneeComponent } from './liste-detaillee-travail-fin-journee/liste-detaillee-travail-fin-journee.component';
+import { DetailTFJComponent } from './liste-detaillee-travail-fin-journee/detail-tfj/detail-tfj.component';
 
+import {MatSortModule} from '@angular/material/sort';
 
 
 
@@ -52,10 +53,12 @@ import { ListeDetailleeTravailFinJourneeComponent } from './liste-detaillee-trav
     UserListComponent,
     CreateUserComponent,
     ListeDetailleeTravailFinJourneeComponent,
+    DetailTFJComponent,
     
     
   ],
   imports: [
+    MatSortModule,
     MatCardModule,
     MatCardModule,
     FormsModule,

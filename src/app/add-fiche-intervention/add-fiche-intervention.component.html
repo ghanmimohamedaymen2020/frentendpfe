@@ -20,40 +20,47 @@
                 <input type="text" class="form-control" id="prog" [(ngModel)]="ficheIntervention.prog" name="prog">
             </div>
 
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Problem ActionImmediate</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.actionsRealisees" name="ActionImmediate"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">detailInvestigations</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.detailInvestigations" name="ActionImmediate"></textarea>
+            </div>
+
+            <!-- 
             <div class="form-group">
                 <label>actionsRealisees </label>
                 <input type="text" class="form-control" id="actionsRealisees" [(ngModel)]="ficheIntervention.actionsRealisees" name="actionsRealisees">
+            </div> -->
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">statutResolution</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.statutResolution" name="ActionImmediate"></textarea>
             </div>
 
             <div class="form-group">
-                <label>detailInvestigations </label>
-                <input type="text" class="form-control" id="detailInvestigations" [(ngModel)]="ficheIntervention.detailInvestigations" name="idetailInvestigationsd">
+                <label for="exampleFormControlTextarea1">Consequences Incident</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.consequencesIncident" name="ActionImmediate"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">constats</label>
+                <textarea class="form-control" [(ngModel)]="ficheIntervention.constats" name="ActionImmediate"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">dureeIncident</label>
+                <input type="time" class="form-control" [(ngModel)]="ficheIntervention.dureeIncident" name="ActionImmediate">
+
             </div>
 
-            <div class="form-group">
-                <label>statutResolution </label>
-                <input type="text" class="form-control" id="statutResolution" [(ngModel)]="ficheIntervention.statutResolution" name="statutResolution">
-            </div>
 
-            <div class="form-group">
-                <label>consequencesIncident </label>
-                <input type="text" class="form-control" id="consequencesIncident" [(ngModel)]="ficheIntervention.consequencesIncident" name="consequencesIncident">
-            </div>
 
-            <div class="form-group">
-                <label>causeIncident </label>
-                <input type="text" class="form-control" id="causeIncident" [(ngModel)]="ficheIntervention.causeIncident" name="causeIncident">
-            </div>
 
-            <div class="form-group">
-                <label>constats </label>
-                <input type="text" class="form-control" id="constats" [(ngModel)]="ficheIntervention.constats" name="constats">
-            </div>
-
-            <div class="form-group">
-                <label>dureeIncident </label>
-                <input type="text" class="form-control" id="dureeIncident" [(ngModel)]="ficheIntervention.dureeIncident" name="dureeIncident">
-            </div>
 
             <br>
             <button type="submit" class="btn btn-primary">Save User</button>

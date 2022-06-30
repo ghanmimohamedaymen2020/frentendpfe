@@ -9,10 +9,11 @@ import { ListeDetailleeTravailFinJourneeModelService } from '../services/liste-d
   styleUrls: ['./liste-detaillee-travail-fin-journee.component.css']
 })
 export class ListeDetailleeTravailFinJourneeComponent implements OnInit {
+  displayedColumns: string[] = ['prog', 'DATD', 'DATF', 'duree'];
 
 
   LdtfjList : Ldtfj[];
-  
+ 
 
   constructor(private  servicesL : ListeDetailleeTravailFinJourneeModelService , private router : Router ) { }
 

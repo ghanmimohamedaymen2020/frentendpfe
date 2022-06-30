@@ -18,6 +18,7 @@ export class AddFicheInterventionComponent implements OnInit {
 saveFicheIntervention (){
   return this.FicheInterventionService.createFicheIntervention(this.ficheIntervention).
   subscribe({
+    next:()=>{this.gotoFicheInternetionList},
     complete : ()=> {this.gotoFicheInternetionList();},
     error : ()=> {console.log(console.error()
     )}
@@ -30,8 +31,9 @@ saveFicheIntervention (){
   )*/
 }
 gotoFicheInternetionList(){
-this.router.navigate(['/ficheInventaire'])
+this.router.navigate(['/ListOfFichesInterventions'])
 }
+
 
 
 OnSubmit(){

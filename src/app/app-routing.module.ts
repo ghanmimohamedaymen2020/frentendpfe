@@ -18,7 +18,7 @@ const routes: Routes = [
   {path : 'createNewUser', component : CreateUserComponent , },
   { path: '', redirectTo: 'users',pathMatch:'full'},
   {path: 'addFicheIntervention',component:AddFicheInterventionComponent  },
-  {path : 'ldfj' ,component: ListeDetailleeTravailFinJourneeComponent},
+  {path : 'ldfj' ,component: ListeDetailleeTravailFinJourneeComponent , canActivate:[AuthGuard],data:{roles:['Admin'] }},
 
   {path: 'update-user/:id',component:UpdateUserComponent},
   {path : 'detate-user/:id' , redirectTo :'users'},
