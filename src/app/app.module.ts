@@ -37,6 +37,7 @@ import { ListeDetailleeTravailFinJourneeComponent } from './liste-detaillee-trav
 import { DetailTFJComponent } from './liste-detaillee-travail-fin-journee/detail-tfj/detail-tfj.component';
 
 import {MatSortModule} from '@angular/material/sort';
+import { ListeTFJComponent } from './liste-tfj/liste-tfj.component';
 
 
 
@@ -54,6 +55,7 @@ import {MatSortModule} from '@angular/material/sort';
     CreateUserComponent,
     ListeDetailleeTravailFinJourneeComponent,
     DetailTFJComponent,
+    ListeTFJComponent,
     
     
   ],

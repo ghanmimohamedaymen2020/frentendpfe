@@ -98,27 +98,27 @@
 
 
 
+<!-- 
+<mat-grid-list cols="8" rowHeight="100px">
+    <mat-grid-tile [colspan]="1" [rowspan]="5"></mat-grid-tile>
 
 
-
+    <mat-grid-tile [colspan]="7" [rowspan]="5" [style.background]="'lightpink'"> -->
 
 
 <div class="mat-elevation-z8">
     <table mat-table [dataSource]="LdtfjList">
 
-        <!-- Position Column -->
         <ng-container matColumnDef="prog">
             <th mat-header-cell *matHeaderCellDef> Prog </th>
             <td mat-cell *matCellDef="let element"> {{element.prog}} </td>
         </ng-container>
 
-        <!-- Name Column -->
         <ng-container matColumnDef="DATD">
             <th mat-header-cell *matHeaderCellDef> DATD </th>
             <td mat-cell *matCellDef="let element"> {{element.DATD}} </td>
         </ng-container>
 
-        <!-- Weight Column -->
         <ng-container matColumnDef="DATF">
             <th mat-header-cell *matHeaderCellDef> DATF </th>
             <td mat-cell *matCellDef="let element"> {{element.DATF}} </td>
@@ -130,16 +130,14 @@
         </ng-container>
 
 
-        <!-- <ng-container matColumnDef="symbol">
-            <th mat-header-cell *matHeaderCellDef> DUREE </th>
-            <td mat-cell *matCellDef="let element"> {{element.duree} </td>
-       
-        </ng-container> -->
+
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
-    </mat-paginator>
-</div>
+    <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+            </mat-paginator>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list> -->
