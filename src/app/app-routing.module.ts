@@ -27,7 +27,8 @@ const routes: Routes = [
   {path : 'detate-user/:id' , redirectTo :'users'},
   {path:"ListOfFichesInterventions",component:ListOfFicheInterventionComponent },
   {path:"testGrid",component:DetailTFJComponent},
-  {path : "LTFJ", component: ListeTFJComponent}
+  {path : "LTFJ", component: ListeTFJComponent},
+  {path:"DetailTFJ" , component:DetailTFJComponent },
 
 
 

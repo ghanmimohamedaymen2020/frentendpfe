@@ -49,6 +49,13 @@
                     <a *ngIf="isloggedIn() && getRoleUser()" routerLink="ldfj" routerLinkActive="active" class="nav-link"> LDTFJ </a>
                 </li>
 
+                <li class="nav-item">
+                    <a *ngIf="isloggedIn() && getRoleAdmin()" routerLink="LTFJ" routerLinkActive="active" class="nav-link"> LDTFJ </a>
+                </li>
+
+                <li class="nav-item">
+                    <a *ngIf="isloggedIn() && getRoleAdmin()" routerLink="DetailTFJ" routerLinkActive="active" class="nav-link"> Detail TFJ </a>
+                </li>
             </ul>
             <!-- Left links -->
 
