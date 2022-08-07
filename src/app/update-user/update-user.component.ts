@@ -27,7 +27,7 @@ export class UpdateUserComponent implements OnInit {
       },error=>console.log(error));
       
     }
-      
+       
         OnSubmit(){
           this.userServices.updateUser(this.id,this.user).subscribe(data=>{
             this.goToUserList(); 
